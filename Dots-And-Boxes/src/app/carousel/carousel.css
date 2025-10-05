@@ -1,0 +1,48 @@
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    width: 70%;
+    height: 85%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.arrow {
+    height: 55px;
+    width: auto;
+    transition: transform 0.1s ease;
+}
+
+.pressed {
+    transform: scale(1.1);
+}
+
+.carousel-control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    background: #866EC2;
+    color: white;
+    font-family: Calibri;
+    font-size: x-large;
+    width: 100px;
+    height: 50px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.1s ease;
+    margin: 0 10px;
+}
+
+.carousel-control-wrapper {
+    position: absolute;
+    bottom: 4%;
+    left: 50%;
+    transform: translateX(-50%);
+}

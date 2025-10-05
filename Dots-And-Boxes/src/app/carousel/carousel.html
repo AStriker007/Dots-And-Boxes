@@ -1,0 +1,34 @@
+<div class="container">
+
+    @switch (index) {
+    @case(0){
+
+    <app-carousel-item1></app-carousel-item1>
+
+    }
+    @case(1){
+
+    <app-carousel-item2></app-carousel-item2>
+
+    }
+    @case(2){
+
+    <app-carousel-item3></app-carousel-item3>
+
+    }
+    @case(3){
+
+    <app-carousel-item4></app-carousel-item4>
+
+    }
+    }
+    <div class="carousel-control-wrapper">
+        <div class="carousel-control">
+            <div (pointerup)="turnLeft()" (pointerdown)="handlePointerDownOnLeft()"><img class="arrow" [class.pressed]="leftActive"
+                    src="../../assets/leftarrow.svg" alt="" srcset=""></div>
+            <div class="button" [class.pressed]="okActive" (pointerdown)="handleOKPressDown()" (pointerup)="handleOKPressUp()">OK</div>
+            <div (pointerup)="turnRight()" (pointerdown)="handlePointerDownOnRight()"><img class="arrow" [class.pressed]="rightActive"
+                    src="../../assets/rightarrow.svg" alt="" srcset=""></div>
+        </div>
+    </div>
+</div>
